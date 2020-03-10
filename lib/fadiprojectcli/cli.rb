@@ -1,17 +1,27 @@
 class Fadiprojectcli::Cli
   
   
-    #start should greet user and give a description (loop to keep asking for info)
-    #get data from API file
-    #create new costume object
-    #all inside start method 
+    # 1/start 
+    #A) should greet user with name 
+    #B)give a description (loop to keep asking for info)
+    #C)get data from API file
+    #D)create new costume object
+    #Eall inside start method 
     
     def start
-    puts "Hello!/ Bonjour!"
-    puts "geting data from api ...please wait"
+    puts "  Welcome to Best school rate"#{name}
+    puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name"
+    puts "please wait a moment"
     puts "new object"
     #binding.pry
   end 
+  
+  
+  
+  
+  
+  
+  
   #  work with input 
     #expect input 
     # depending input do something 
