@@ -13,9 +13,9 @@ class Fadiprojectcli::Cli
     puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name"
     puts "please wait a moment"
     puts "new object"
-    #binding.pry
+    
   end 
-  
+  #binding.pry
   
   
   
@@ -30,14 +30,16 @@ class Fadiprojectcli::Cli
     #kill program , end message .
    
    def display_infos
-     puts "please make a selection"
+     puts "please enter your search "
       input = "gets.strip.downcase"
       if input == adresse
-        puts "buyer agent  list "
+        puts " school neighbor list "
          else 
-           puts "write a correct adresse"
-           puts "invalide adresse"
+           puts "write a correct search criteria"
+           puts "invalide search"
            
    end 
 end 
+end 
+
   
