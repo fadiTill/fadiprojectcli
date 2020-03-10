@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       =  "simple cli app"
   spec.description   = "scrape data from website to create app"
-  spec.homepage      = " https://github.com/fadiTill/fadiprojectcli.git"
+  spec.homepage      = "https://github.com/fadiTill/fadiprojectcli.git"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
