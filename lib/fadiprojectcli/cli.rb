@@ -1,4 +1,4 @@
-class fadiprojectcli::cli
+class Fadiprojectcli::Cli
   
   def start
     puts "Hello!/ Bonjour!"
