@@ -55,12 +55,17 @@
       show_schools_results
     elsif input != "adresse" || input!="name" || input !="grades" || input == nil
      puts"write a correct search criteria"
-   else input == "leave search"
-     binding.pry
+     show_schools_results
+    end
+  end
+     
+     def leave_search
+      input == "leave search"
       puts"thank you for visiting our website,goodbye!" 
+     end 
+     
    end 
-   end 
-  end 
+  
 
   
   
