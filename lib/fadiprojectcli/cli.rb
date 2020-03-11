@@ -39,25 +39,27 @@
    
   def show_schools_results
      puts "please enter your search "
-     input = "gets.str.capitalize"
+     input = gets.strip.downcase
     if input == "adresse"
-      puts "........... school neighbor list......... "
-       puts "SCHOOL ADRESSE LIST"
+      puts"........... school neighbor list......... "
+       puts"SCHOOL ADRESSE LIST"
        show_schools_results
     elsif input ==  "name"
       puts".............school rating................"
-      puts 'PUTS NAME LIST'
+      puts"PUTS NAME LIST"
       show_schools_results
     elsif input == "grades"
-      puts "............same grades list.............."
-      puts "PUTS GRADES LIST"
+      puts"............same grades list.............."
+      puts"PUTS GRADES LIST"
       show_schools_results
-    elsif input != "adresse" || input!="name" || input !="grades" || input == "nil"
-     #puts "write a correct search criteria"
-   else   input == "leave search"
-      puts "thank you for visiting our website,goodbye!" 
+    elsif input != "adresse" || input!="name" || input !="grades" || input == nil
+     puts"write a correct search criteria"
+   else input == "leave search"
+     binding.pry
+      puts"thank you for visiting our website,goodbye!" 
    end 
    end 
   end 
 
+  
   
