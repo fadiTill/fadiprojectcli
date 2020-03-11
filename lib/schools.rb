@@ -1,6 +1,6 @@
 
 
- class School
+ class Fadiproject::School
    
    all = []
   

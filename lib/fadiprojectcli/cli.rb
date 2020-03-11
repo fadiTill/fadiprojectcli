@@ -11,9 +11,11 @@
     #Eall inside start method 
     
     def welcome
-      puts "  Welcome to Best school rating"
+      puts "Welcome to Best school rating"
       puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name.."
+     # @data = Fadiprojectcli::API.get_data
      puts "please wait a moment while we search your result"
+     #@objects = Fadiprojectcli::Schools.all
       show_schools_results
     end 
       
