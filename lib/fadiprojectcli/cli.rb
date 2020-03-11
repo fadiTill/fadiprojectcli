@@ -11,8 +11,8 @@
     #Eall inside start method 
     
     def welcome
-      puts "  Welcome to Best school rate"#{name}
-      puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name"
+      puts "  Welcome to Best school rating"
+      puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name.."
      puts "please wait a moment while we search your result"
       puts " creating result"
     end 
@@ -20,7 +20,7 @@
       
       
     
-    end 
+    
   #binding.pry
   
   
@@ -43,13 +43,13 @@
     if input == adresse
       puts "........... school neighbor list......... "
        puts @school.adresse
-    elsif input == school name
+    elsif input ==  name
       puts".............school rating................"
       puts @school.name
     elsif input == grades
       puts "............same grades list.............."
       puts @school.grades
-    elsif input != adresse || input!=school name || input !=grades || input == nil
+    elsif input != adresse || input!=name || input !=grades || input == nil
       puts "write a correct search criteria"
     else   input == "leave search"
       puts "thank you for visiting our website,goodbye!" 
