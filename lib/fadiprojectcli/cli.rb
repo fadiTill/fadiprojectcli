@@ -14,7 +14,7 @@
       puts "  Welcome to Best school rating"
       puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name.."
      puts "please wait a moment while we search your result"
-      puts " creating result"
+      show_schools_results
     end 
       
       
@@ -42,13 +42,16 @@
      input = "gets.str.capitalize"
     if input == adresse
       puts "........... school neighbor list......... "
-       puts @school.adresse
+       puts @adresse.schools
+       show_schools_results
     elsif input ==  name
       puts".............school rating................"
-      puts @school.name
+      puts @name.schools
+      show_schools_results
     elsif input == grades
       puts "............same grades list.............."
-      puts @school.grades
+      puts @grades.schools
+      show_schools_results
     elsif input != adresse || input!=name || input !=grades || input == nil
       puts "write a correct search criteria"
     else   input == "leave search"
