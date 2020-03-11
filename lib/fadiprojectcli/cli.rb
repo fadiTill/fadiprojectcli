@@ -40,21 +40,21 @@
   def show_schools_results
      puts "please enter your search "
      input = "gets.str.capitalize"
-    if input == adresse
+    if input == "adresse"
       puts "........... school neighbor list......... "
-       puts @adresse.schools
+       puts "SCHOOL ADRESSE LIST"
        show_schools_results
-    elsif input ==  name
+    elsif input ==  "name"
       puts".............school rating................"
-      puts @name.schools
+      puts 'PUTS NAME LIST'
       show_schools_results
-    elsif input == grades
+    elsif input == "grades"
       puts "............same grades list.............."
-      puts @grades.schools
+      puts "PUTS GRADES LIST"
       show_schools_results
-    elsif input != adresse || input!=name || input !=grades || input == nil
-      puts "write a correct search criteria"
-    else   input == "leave search"
+    elsif input != "adresse" || input!="name" || input !="grades" || input == "nil"
+     #puts "write a correct search criteria"
+   else   input == "leave search"
       puts "thank you for visiting our website,goodbye!" 
    end 
    end 
