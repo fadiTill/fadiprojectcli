@@ -38,8 +38,9 @@
     #kill program , end message .
    
   def show_schools_results
-     puts "please enter your search "
+     puts "please enter your search: "
      input = gets.strip.downcase
+     
     if input == "adresse"
       puts"........... school neighbor list......... "
        puts"SCHOOL ADRESSE LIST"
