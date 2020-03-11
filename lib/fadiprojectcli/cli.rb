@@ -1,4 +1,6 @@
-class Fadiprojectcli::Cli
+
+
+  class Fadiprojectcli::Cli
   
   
     # 1/start 
@@ -8,13 +10,17 @@ class Fadiprojectcli::Cli
     #D)create new costume object
     #Eall inside start method 
     
-    def start
-    puts "  Welcome to Best school rate"#{name}
-    puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name"
-    puts "please wait a moment"
-    puts "new object"
+    def welcome
+      puts "  Welcome to Best school rate"#{name}
+      puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name"
+     puts "please wait a moment while we search your result"
+      puts " creating result"
+    end 
+      
+      
+      
     
-  end 
+    end 
   #binding.pry
   
   
@@ -22,24 +28,29 @@ class Fadiprojectcli::Cli
   
   
   
-  #  work with input 
+  #  work with input (keep asking with while exit! put )
     #expect input 
-    # depending input do something 
+    # depending on what w we get do something 
+    #condition to check input for a good value 
+  #else tell them try again
     #exit command 
     #if input == exit
     #kill program , end message .
    
-   def display_infos
+  def show_schools_results
      puts "please enter your search "
-      input = "gets.strip.downcase"
-      if input == adresse
-        puts " school neighbor list "
-         else 
-           puts "write a correct search criteria"
-           puts "invalide search"
-           
+     input = "gets.strip.downcase"
+    if input == adresse
+      puts " school neighbor list "
+    elsif input == school name
+      puts" school rating"
+    elsif input == grades
+      puts "same grades list"
+    else
+      puts "write a correct search criteria"
+      puts "invalide search"
    end 
-end 
-end 
+   end 
+  end 
 
   
