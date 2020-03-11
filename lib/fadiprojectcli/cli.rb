@@ -41,11 +41,17 @@
    
   def show_schools_results
      puts "please enter your search: "
+     #@object.each do |obj|
+     #puts obj#(name) - obj#(adresse)
+  #end
      input = gets.strip.downcase
      
-    if input == "adresse"
+     
+    if input == "adresse" #1
       puts"........... school neighbor list......... "
        puts"SCHOOL ADRESSE LIST"
+       #if obj = @object[0]
+       #puts obj.name
        show_schools_results
     elsif input ==  "name"
       puts".............school rating................"
