@@ -42,10 +42,13 @@
      input = "gets.str.capitalize"
     if input == adresse
       puts "........... school neighbor list......... "
+       puts @school.adresse
     elsif input == school name
       puts".............school rating................"
+      puts @school.name
     elsif input == grades
       puts "............same grades list.............."
+      puts @school.grades
     elsif input != adresse || input!=school name || input !=grades || input == nil
       puts "write a correct search criteria"
     else   input == "leave search"
