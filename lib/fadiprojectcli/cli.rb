@@ -11,12 +11,12 @@
     #Eall inside start method 
     
     def welcome
-      puts "Welcome to Best school rating"
-      puts "this website will help you determinate wish school match your need, you can start your search by location,grades,rank,name.."
+      puts "Welcome to Books search"
+      puts "this website will help you determinate wish book match your need, you can start your search by location,grades,rank,name.."
      # @data = Fadiprojectcli::API.get_data
      puts "please wait a moment while we search your result"
-     #@objects = Fadiprojectcli::Schools.all
-      show_schools_results
+     #@objects = Fadiprojectcli::Books.all
+      show_books_results
     end 
       
       
@@ -39,7 +39,7 @@
     #if input == exit
     #kill program , end message .
    
-  def show_schools_results
+  def show_books_results_results
      puts "please enter your search: "
      #@object.each do |obj|
      #puts obj#(name) - obj#(adresse)
@@ -47,23 +47,23 @@
      input = gets.strip.downcase
      
      
-    if input == "adresse" #1
+    if input == "author" #1
       puts"........... school neighbor list......... "
-       puts"SCHOOL ADRESSE LIST"
+       puts"books Authors LIST"
        #if obj = @object[0]
        #puts obj.name
-       show_schools_results
+       show_books_results
     elsif input ==  "name"
       puts".............school rating................"
       puts"PUTS NAME LIST"
-      show_schools_results
-    elsif input == "grades"
-      puts"............same grades list.............."
-      puts"PUTS GRADES LIST"
-      show_schools_results
-    elsif input != "adresse" || input!="name" || input !="grades" || input == nil
+      show_books_results
+    elsif input == "reviews"
+      puts"............review list.............."
+      puts"PUTS REVIEWS LIST"
+      show_books_results
+    elsif input != "author" || input!="name" || input !="reviews" || input == nil
      puts"write a correct search criteria"
-     show_schools_results
+     show_books_results
     end
   end
      
