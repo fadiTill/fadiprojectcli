@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'fadimata tillman'"]
   spec.email         = ["'fadi.tillman@gmail.com'"]
 
-  spec.summary       =  "simple  yelp  cli app"
-  spec.description   = "scrape data from yelp website to create app"
+  spec.summary       =  "simple   cli app"
+  spec.description   = "scrape data from website to create app"
   spec.homepage      = "https://github.com/fadiTill/fadiprojectcli.git"
   spec.license       = "MIT"
 
