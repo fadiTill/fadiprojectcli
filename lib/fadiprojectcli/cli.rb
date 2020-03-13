@@ -11,12 +11,12 @@
     #Eall inside start method 
     
     def welcome
-      puts "Welcome to businesses search"
-      puts "this website will help you determinate wish businesses match your need, you can start your search by location,genre,price,name.."
+      puts "Welcome to star wars fan search"
+      puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
      # @data = Fadiprojectcli::API.get_data
      puts "please wait a moment while we search your result"
-     #@objects = Fadiprojectcli::Businesses.all
-      show_businesses_results
+     #@objects = Fadiprojectcli::starinfos.all
+      show_starinfos_results
     end 
       
       
@@ -39,7 +39,7 @@
     #if input == exit
     #kill program , end message .
    
-  def show_books_results_results
+  def show_starinfos_results
      puts "please enter your search: "
      #@object.each do |obj|
      #puts obj#(name) - obj#(adresse)
@@ -47,21 +47,21 @@
      input = gets.strip.downcase
      
      
-    if input == "price " #1
-      puts"...........  list......... "
-       puts" PRICE  BUSINESSES LIST"
+    if input == "people" #1
+      puts"...........  infos......... "
+       puts" infos people"
        #if obj = @object[0]
        #puts obj.name
-       show_businesses_results
-    elsif input ==  "name"
-      puts".............BUSINESSES rating................"
-      puts"PUTS NAME LIST"
-      show_businesses_results
-    elsif input == "reviews"
-      puts"............review  BUSINESSES list.............."
-      puts"PUTS REVIEWS LIST"
-      show_businesses_results
-    elsif input != "price" || input!="genre" || input !="reviews" || input == nil
+       show_starinfos_results
+    elsif input ==  "planet"
+      puts"...........planet.................."
+      puts"Planet infos"
+      show_starinfos_results
+    elsif input == "species"
+      puts"............species infos.............."
+      puts"SPECIES INFOS"
+      show_starinfos_results
+    elsif input != "people" || input!="Planet" || input !="species" || input == nil
      puts"write a correct search criteria"
      show_businesses_results
     end

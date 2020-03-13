@@ -1,6 +1,6 @@
 
 
- class Fadiproject::Characteres
+ class Fadiproject::starinfos
    
   # "gender": "Male",
   #   "hair_color": "Blond",
@@ -15,14 +15,12 @@
    
    all = []
   
-  attr_accessor :gender, :hair_color, :height,  :name, :species
+  attr_accessor :people, :species, :planet, 
   
   def initialize
-    @gender = gender
-    @hair_color = hair_color 
-    @height= height
-    @name = name
-    @species  = species
+    @people = people
+    @pecies = species 
+    @planet= planet
     @all<< self 
   end 
   
