@@ -1,18 +1,16 @@
 
 
- class Fadiproject::Books
+ class Fadiproject::Businesses
    
    all = []
   
-  attr_accessor :name, :genre :author, :review,  :library, :pages, :price
+  attr_accessor :name, :genre, :review,  :adresse, , :price
   
   def initialize
     @name = name
     @genre = genre 
-    @author = author
+    @adresse= adresse
     @reviews = reviews
-    @library = library
-    @pages = pages
     @price  = price 
     @all<< self 
   end 

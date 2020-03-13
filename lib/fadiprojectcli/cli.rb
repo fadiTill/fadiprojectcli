@@ -11,12 +11,12 @@
     #Eall inside start method 
     
     def welcome
-      puts "Welcome to Books search"
-      puts "this website will help you determinate wish book match your need, you can start your search by location,grades,rank,name.."
+      puts "Welcome to businesses search"
+      puts "this website will help you determinate wish businesses match your need, you can start your search by location,genre,price,name.."
      # @data = Fadiprojectcli::API.get_data
      puts "please wait a moment while we search your result"
-     #@objects = Fadiprojectcli::Books.all
-      show_books_results
+     #@objects = Fadiprojectcli::Businesses.all
+      show_businesses_results
     end 
       
       
@@ -47,23 +47,23 @@
      input = gets.strip.downcase
      
      
-    if input == "author" #1
-      puts"........... school neighbor list......... "
-       puts"books Authors LIST"
+    if input == "price " #1
+      puts"...........  list......... "
+       puts" PRICE  BUSINESSES LIST"
        #if obj = @object[0]
        #puts obj.name
-       show_books_results
+       show_businesses_results
     elsif input ==  "name"
-      puts".............school rating................"
+      puts".............BUSINESSES rating................"
       puts"PUTS NAME LIST"
-      show_books_results
+      show_businesses_results
     elsif input == "reviews"
-      puts"............review list.............."
+      puts"............review  BUSINESSES list.............."
       puts"PUTS REVIEWS LIST"
-      show_books_results
-    elsif input != "author" || input!="name" || input !="reviews" || input == nil
+      show_businesses_results
+    elsif input != "price" || input!="genre" || input !="reviews" || input == nil
      puts"write a correct search criteria"
-     show_books_results
+     show_businesses_results
     end
   end
      
