@@ -1,5 +1,5 @@
 
-
+require 'pry'
   class Fadiprojectcli::Cli
   
   
@@ -13,7 +13,7 @@
     def welcome
       puts "Welcome to star wars fan search"
       puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
-      #@starinfos= Fadiprojectcli::API.get_starinfos
+      @data= Fadiprojectcli::API.get_stuff
      puts "please wait a moment while we search your result"
      #@People = Fadiprojectcli::starinfos.all
       show_starinfos_results
@@ -23,7 +23,7 @@
       
     
     
-  #binding.pry
+  binding.pry
   
   
   

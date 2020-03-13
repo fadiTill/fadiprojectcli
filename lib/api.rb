@@ -5,8 +5,8 @@
 #send those back to our cli
 
 class Fadiprojectcli::Api
-  def self.get_starinfos
-    @starinfos_hash = HTTparty.get(https://swapi.co/api/planets/1/)
+  def self.get_stuff
+    @stuff_hash = HTTparty.get(https://swapi.co/api/planets/1/)
     binding.pry
-end 
+end  
 end
