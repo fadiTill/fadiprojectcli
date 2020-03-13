@@ -6,7 +6,7 @@
 
 class Fadiprojectcli::Api
   def self.get_businesses
-    @businesses_hash = HTTparty.get("https://api.yelp.com/v3/businesses)
+    @businesses_hash = HTTparty.get("https://api.yelp.com/v3/businesses/search?location=Las Vegas")
     binding.pry
 end 
 end
