@@ -13,9 +13,9 @@
     def welcome
       puts "Welcome to star wars fan search"
       puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
-     # @data = Fadiprojectcli::API.get_data
+      @starinfos= Fadiprojectcli::API.get_starinfos
      puts "please wait a moment while we search your result"
-     #@objects = Fadiprojectcli::starinfos.all
+     @People = Fadiprojectcli::starinfos.all
       show_starinfos_results
     end 
       
@@ -63,7 +63,7 @@
       show_starinfos_results
     elsif input != "people" || input!="Planet" || input !="species" || input == nil
      puts"write a correct search criteria"
-     show_businesses_results
+     show_starinfos_results
     end
   end
      
