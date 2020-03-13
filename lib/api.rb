@@ -6,7 +6,7 @@
 
 class Fadiprojectcli::Api
   def self.get_starinfos
-    @starinfos_hash = HTTparty.get(http swapi.co/api/planets/1/)
+    @starinfos_hash = HTTparty.get(https://swapi.co/api/planets/1/)
     binding.pry
 end 
 end
