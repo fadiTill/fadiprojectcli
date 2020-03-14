@@ -1,6 +1,6 @@
 
 
- #class Fadiproject::starinfos
+ class Fadiproject::CLI
    
   # "gender": "Male",
   #   "hair_color": "Blond",

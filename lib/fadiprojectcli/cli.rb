@@ -3,12 +3,7 @@ require 'pry'
   class Fadiprojectcli::CLI
   
   
-    # 1/start 
-    #A) should greet user with name 
-    #B)give a description (loop to keep asking for info)
-    #C)get data from API file
-    #D)create new costume object
-    #Eall inside start method 
+     
     
     def welcome
       puts "Welcome to star wars fan search"
@@ -21,23 +16,6 @@ require 'pry'
       
       
       
-    
-    
-  
-  
-  
-  
-  
-  
-  
-  #  work with input (keep asking with while exit! put )
-    #expect input 
-    # depending on what w we get do something 
-    #condition to check input for a good value 
-  #else tell them try again
-    #exit command 
-    #if input == exit
-    #kill program , end message .
    
   def show_starinfos_results
      puts "please enter your search: "
