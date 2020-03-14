@@ -8,5 +8,9 @@ class Fadiprojectcli::API
   def self.get_stuff
     @stuff_hash = HTTParty.get("https://swapi.co/api/people/?search=r2")
     binding.pry
+    stuff_obj = {
+      count: @stuff_hash.first
+      
+    }
 end  
 end
