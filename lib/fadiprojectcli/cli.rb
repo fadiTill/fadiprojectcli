@@ -22,7 +22,7 @@ require 'pry'
      puts "please enter your search: "
      #@object.each do |obj|
      #puts #{obj.name} - {obj.adresse}
-  #end
+  end
      input = gets.strip.downcase
      
      
@@ -42,15 +42,13 @@ require 'pry'
       show_starinfos_results
     elsif input != "people" || input!="Planet" || input !="species" || input == nil
      puts"write a correct search criteria"
-     leave_search
     end
-  end
+  
      
      def leave_search
       input == "leave search"
       puts"thank you for visiting our website,goodbye!" 
      end 
-     
    end 
   
 
