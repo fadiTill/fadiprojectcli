@@ -41,7 +41,7 @@ require 'pry'
       show_starinfos_results
     elsif input != "people" || input!="Planet" || input !="species" || input == nil
      puts"write a correct search criteria"
-     show_starinfos_results
+     break
     end
   end
      
