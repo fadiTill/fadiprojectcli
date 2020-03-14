@@ -20,7 +20,7 @@ require 'pry'
   def show_starinfos_results
      puts "please enter your search: "
      #@object.each do |obj|
-     #puts obj#(name) - obj#(adresse)
+     #puts #{obj.name} - {obj.adresse}
   #end
      input = gets.strip.downcase
      

@@ -17,7 +17,7 @@
   
   attr_accessor :people, :species, :planet, 
   
-  def initialize
+  def initialize(hash)
     @people = people
     @pecies = species 
     @planet= planet
@@ -28,4 +28,9 @@
   def self.all
     @all
 end 
+
+def save 
 end 
+
+end 
+
