@@ -3,4 +3,5 @@
 require "bundler/setup"
 require "fadiprojectcli"
 
+
 Fadiprojectcli::Cli.new.welcome
