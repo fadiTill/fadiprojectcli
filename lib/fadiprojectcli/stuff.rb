@@ -1,6 +1,6 @@
 
 
- class Fadiproject::Stuff
+ class Fadiprojectcli::Stuff
    
   # "gender": "Male",
   #   "hair_color": "Blond",
