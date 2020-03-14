@@ -31,7 +31,7 @@ require 'pry'
        puts" infos people"
        #if obj = @object[0]
        #puts obj.name
-       show_starinfos_results
+       #show_starinfos_results
     elsif input ==  "planet"
       puts"...........planet.................."
       puts"Planet infos"
