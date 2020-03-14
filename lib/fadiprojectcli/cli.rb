@@ -23,7 +23,7 @@ require 'pry'
       
     
     
-  binding.pry
+  
   
   
   
