@@ -2,7 +2,7 @@
 
 require "fadiprojectcli/version"
 require "fadiprojectcli/cli"
-require "fadiprojectcli/api"
+require_relative "fadiprojectcli/api"
 
 #depndendencies
  require "pry"
