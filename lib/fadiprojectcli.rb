@@ -3,6 +3,8 @@
 require "fadiprojectcli/version"
 require "fadiprojectcli/cli"
 require "fadiprojectcli/api"
+require "fadiprojectcli/stuff"
+
 
 #depndendencies
  require "pry"
