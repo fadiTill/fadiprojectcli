@@ -6,7 +6,7 @@
 
 class Fadiprojectcli::API
   def self.get_stuff
-    @stuff_hash = HTTParty.get(https://swapi.co/api/people/?search=r2)
+    #@stuff_hash = HTTParty.get()
     binding.pry
 end  
 end
