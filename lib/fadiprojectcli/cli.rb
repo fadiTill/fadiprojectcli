@@ -8,7 +8,7 @@ require 'pry'
     def welcome
       puts "Welcome to star wars fan search"
       puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
-     #@data = Fadiprojectcli::API.get_data
+     #@data = Fadiprojectcli::API.get_stuff
       puts "please wait a moment while we search your result"
       # @objects= Fadiprojectcli::stuff.all
       show_starinfos_results
