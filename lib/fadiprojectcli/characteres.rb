@@ -15,7 +15,7 @@
    
    all = []
   
-  # attr_accessor :height, :name, :eye_color :gender
+   attr_accessor :height, :name, :eye_color, :gender
   
   def initialize(infos)
     infos.each  {|key, value| self.send(("#{key}="), value)}
