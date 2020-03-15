@@ -17,8 +17,9 @@
   
   # attr_accessor :people, :species, :planet, 
   
-  def initialize(hash)
+  def initialize(infos)
     binding.pry
+    infos.each do {|key, value|self.send}
     # @people = people
     # @pecies = species 
     # @planet= planet
