@@ -16,8 +16,8 @@ require 'pry'
   #     @objects = Fadiprojectcli::Information.all
   #     binding.pry
   #     #show_starinfos_results
-  #   end 
-  # end
+    end 
+ end
       
       
       
