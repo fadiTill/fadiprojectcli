@@ -12,7 +12,7 @@ require 'pry'
       puts "please wait a moment while we search your result"
       puts"................................................"
   #     input = gets
-  #     @data = Fadiprojectcli::API.get_stuff
+      @data = Fadiprojectcli::API.get_stuff
   #     @objects = Fadiprojectcli::Information.all
   #     binding.pry
   #     #show_starinfos_results
