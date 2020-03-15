@@ -9,7 +9,7 @@ class Fadiprojectcli::API
     @charactere_hash = HTTParty.get("https://swapi.co/api/people/1/")
     binding.pry
     characteres_obj = {
-      name: @charactere_hash["name"]
+      name: @charactere_hash["name"],
       height: @charactere_hash["height"],
       eye_color: @charactere_hash["eye_color"],
       gender: @charactere_hash["gender"],
