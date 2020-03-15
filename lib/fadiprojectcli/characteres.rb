@@ -15,24 +15,25 @@
    
    all = []
   
-  # attr_accessor :people, :species, :planet, 
+  # attr_accessor :height, :name, :eye_color :gender
   
   def initialize(infos)
-    binding.pry
-    infos.each  {|key, value|self.send}(("#{key=}"),value)
-    # @people = people
-    # @pecies = species 
-    # @planet= planet
+    infos.each  {|key, value| self.send(("#{key}="), value)}
+    # @height = height
+    # @name = name
+    # @eye_color= eye_color
+    # @gender = gender
     # @all<< self 
+    save
   end 
   
   
   def self.all
     @@all
-end 
+  end 
 
 def save 
+  binding.pry
 end 
-
-end 
+end
 
