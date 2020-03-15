@@ -15,7 +15,7 @@
   
    attr_accessor :height, :name, :eye_color, :gender
    
-   @@all=[]
+   @@all=[ ]
   
   def initialize(infos)
     infos.each  {|key, value| self.send(("#{key}="), value)}
@@ -34,6 +34,5 @@
 
 def save 
   @@all << self
-
 end 
 end

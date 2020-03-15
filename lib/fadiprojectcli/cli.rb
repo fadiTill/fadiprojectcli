@@ -14,7 +14,7 @@ require 'pry'
       input = gets.strip.downcase
       @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Personage.all
-      #binding.pry
+      binding.pry
       #show_starinfos_results
     end 
   end
