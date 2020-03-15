@@ -6,12 +6,12 @@
 
 class Fadiprojectcli::API
   def self.get_stuff
-    @charactere_hash = HTTParty.get("https://swapi.co/api/people/?")
+    @charactere_hash = HTTParty.get("https://swapi.co/api/people/?search=r2")
     binding.pry
     characteres_obj = {
-      url: @charactere_hash[]
-      #people/2/: @charactere_hash["/2/"],
-      #people/3/: @charactere_hash["/3/"],
+      name: @charactere_hash["name"],
+      eye_color: @charactere_hash["eye_color"],
+      homeworld: @charactere_hash["species"]
       
     }
 #     Fadiprojectcli::Information.new(characteres_obj)
