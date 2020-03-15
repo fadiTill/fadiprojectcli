@@ -6,7 +6,7 @@
 
 class Fadiprojectcli::API
   def self.get_stuff(input)
-    @charactere_hash = HTTParty.get("https://swapi.co/api/")
+    @charactere_hash = HTTParty.get("https://swapi.co/api/people")
 #     characteres_obj = {
 #       people: @charactere_hash["people"],
 #       planet: @charactere_hash["planet"],
@@ -14,5 +14,5 @@ class Fadiprojectcli::API
       
 #     }
 #     Fadiprojectcli::Information.new(characteres_obj)
-# end  
+ end  
 end

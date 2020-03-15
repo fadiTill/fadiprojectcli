@@ -13,7 +13,7 @@
    
    
   
-   attr_accessor :people, :species, :planet, 
+   #attr_accessor :people, :species, :planet, 
    
    @@all=[ ]
   
