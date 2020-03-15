@@ -19,7 +19,7 @@
   
   def initialize(infos)
     binding.pry
-    infos.each do {|key, value|self.send}
+    infos.each  {|key, value|self.send}(("#{key=}"),value)
     # @people = people
     # @pecies = species 
     # @planet= planet
