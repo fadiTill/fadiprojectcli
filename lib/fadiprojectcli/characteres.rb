@@ -1,6 +1,6 @@
 
 
- class Fadiprojectcli::Stuff
+ class Fadiprojectcli::Characteres
    
   # "gender": "Male",
   #   "hair_color": "Blond",
@@ -15,18 +15,19 @@
    
    all = []
   
-  attr_accessor :people, :species, :planet, 
+  # attr_accessor :people, :species, :planet, 
   
   def initialize(hash)
-    @people = people
-    @pecies = species 
-    @planet= planet
-    @all<< self 
+    binding.pry
+    # @people = people
+    # @pecies = species 
+    # @planet= planet
+    # @all<< self 
   end 
   
   
   def self.all
-    @all
+    @@all
 end 
 
 def save 
