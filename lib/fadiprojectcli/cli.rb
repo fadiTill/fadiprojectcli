@@ -9,8 +9,9 @@ require 'pry'
     def start
       puts "Welcome to star wars fan search"
       puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
-      @data = Fadiprojectcli::API.get_stuff
-      #puts "please wait a moment while we search your result"
+      puts "please wait a moment while we search your result"
+      input = gets.strip.downcase
+      @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Peoples.all
       binding.pry
       #show_starinfos_results
