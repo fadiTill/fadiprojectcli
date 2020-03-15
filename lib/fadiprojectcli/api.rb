@@ -13,6 +13,6 @@ class Fadiprojectcli::API
       eye_color: @charactere_hash["eye_color"],
       gender: @charactere_hash["gender"]
     }
-    Fadiprojectcli::Ppeople.new(characteres_obj)
+    Fadiprojectcli::Personage.new(characteres_obj)
 end  
 end

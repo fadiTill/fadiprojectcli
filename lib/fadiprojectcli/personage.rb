@@ -1,4 +1,4 @@
- class Fadiprojectcli::Ppeople
+ class Fadiprojectcli::Personage
    
   # "gender": "Male",
   #   "hair_color": "Blond",

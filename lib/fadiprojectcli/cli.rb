@@ -13,7 +13,7 @@ require 'pry'
       puts"................................................"
       input = gets.strip.downcase
       @data = Fadiprojectcli::API.get_stuff(input)
-      @objects = Fadiprojectcli::Ppeople.all
+      @objects = Fadiprojectcli::Personage.all
       #binding.pry
       #show_starinfos_results
     end 
