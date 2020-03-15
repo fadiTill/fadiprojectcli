@@ -3,7 +3,7 @@
 require "fadiprojectcli/version"
 require "fadiprojectcli/cli"
 require "fadiprojectcli/api"
-require "fadiprojectcli/peoples"
+require "fadiprojectcli/people"
 
 
 #depndendencies
