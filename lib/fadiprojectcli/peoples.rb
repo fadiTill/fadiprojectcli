@@ -1,6 +1,4 @@
-
-
- class Fadiprojectcli::Characteres
+ class Fadiprojectcli::Peoples
    
   # "gender": "Male",
   #   "hair_color": "Blond",
@@ -13,9 +11,11 @@
   #   "edited": "2014-12-10T13:52:43.172000Z",
   #   "species": [
    
-   all = []
+   
   
    attr_accessor :height, :name, :eye_color, :gender
+   
+   @@all=[]
   
   def initialize(infos)
     infos.each  {|key, value| self.send(("#{key}="), value)}
@@ -34,6 +34,6 @@
 
 def save 
   @@all<< self
+  binding.pry
 end 
 end
-
