@@ -33,7 +33,7 @@
   end 
 
 def save 
-  @@all<< self
-  binding.pry
+  @@all << self
+
 end 
 end
