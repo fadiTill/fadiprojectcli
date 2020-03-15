@@ -13,26 +13,21 @@
    
    
   
-   attr_accessor :height, :name, :eye_color, :gender
+   attr_accessor :people, :species, :planet, 
    
    @@all=[ ]
   
   def initialize(infos)
-    infos.each  {|key, value| self.send(("#{key}="), value)}
-    # @height = height
-    # @name = name
-    # @eye_color = eye_color
-    # @gender = gender
-    # @all<< self 
-    save
+    # infos.each  {|key, value| self.send(("#{key}="), value)}
+    # save
   end 
   
   
   def self.all
-    @@all
+    # @@all
   end 
 
 def save 
-  @@all << self
+  # @@all << self
 end 
 end

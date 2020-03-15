@@ -11,13 +11,13 @@ require 'pry'
       puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
       puts "please wait a moment while we search your result"
       puts"................................................"
-      input = gets
-      @data = Fadiprojectcli::API.get_stuff(input)
-      @objects = Fadiprojectcli::Personage.all
-      binding.pry
-      #show_starinfos_results
-    end 
-  end
+  #     input = gets
+  #     @data = Fadiprojectcli::API.get_stuff
+  #     @objects = Fadiprojectcli::Information.all
+  #     binding.pry
+  #     #show_starinfos_results
+  #   end 
+  # end
       
       
       
