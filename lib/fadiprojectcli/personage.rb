@@ -21,7 +21,7 @@
     infos.each  {|key, value| self.send(("#{key}="), value)}
     # @height = height
     # @name = name
-    # @eye_color= eye_color
+    # @eye_color = eye_color
     # @gender = gender
     # @all<< self 
     save
