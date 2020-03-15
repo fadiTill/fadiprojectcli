@@ -9,9 +9,9 @@ class Fadiprojectcli::API
     @charactere_hash = HTTParty.get("https://swapi.co/api/people/?search=r2")
     binding.pry
     characteres_obj = {
-      name: @charactere_hash["name"],
-      eye_color: @charactere_hash["eye_color"],
-      homeworld: @charactere_hash["species"]
+      @name: @charactere_hash["name"],
+      @eye_color: @charactere_hash["eye_color"],
+      @homeworld: @charactere_hash["species"]
       
     }
 #     Fadiprojectcli::Information.new(characteres_obj)
