@@ -8,14 +8,14 @@
     
     def start
       puts "Welcome to star wars fan search"
-      puts "this website will help you found start wars  charactere information, you can start your seach by  People name, and you will get the charactere height,eye_color and gender."
+      puts "this website will help you found start wars  charactere information, you can start your seach by  People number, and you will get the charactere, name,height,eye_color and gender."
       puts "please wait a moment while we search your result"
       puts "................................................"
        input = gets.strip.downcase
       @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
-     binding.pry
-      show_starinfos_results
+     #binding.pry
+      show_results
     end 
  
       
@@ -25,10 +25,10 @@
    #or type search to go back
       
    
-  def show_starinfos_results
+  def show_results
      puts " Here your search result:"
      puts "........................."
-     @objects.each.with_index(1)  {|people,index| puts "#{index}.#{people.name}"}
+     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
    end
  
    
