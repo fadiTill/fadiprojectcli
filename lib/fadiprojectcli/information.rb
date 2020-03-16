@@ -13,12 +13,12 @@
    
    
   
-   #attr_accessor :name, :height, :eye_color, :gender
+   attr_accessor :name, :height, :eye_color, :gender
    
    @@all=[ ]
   
-  def initialize(infos)
-    infos.each  {|key, value| self.send(("#{key}="), value)}
+  def initialize(hash)
+    hash.each  {|key, value| self.send(("#{key}="), value)}
     save
   end 
   
