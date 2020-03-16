@@ -7,11 +7,14 @@
      
     
     def start
-      puts "Welcome to star wars fan search"
-      puts "this website will help you found start wars  charactere information, you can start your seach by  People by number between 1 to 87, and you will get the charactere, name them input an index number 2 for height,3 for eye_color and  4 for gender."
-      puts".................................................."
+      puts "Welcome to star wars fan search!"
+      puts ".................................................................................................................."
+      puts "this website will help you found start wars  charactere information.
+      puts "You can make your seach of characteres by choosing a number between 1 to 87
+      puts"....................................................................................................................'"
       puts "please wait a moment while we search your result"
-      puts "................................................"
+      puts "...................................................................................................................."
+      puts "please make an index selection ( index number 2 for height, 3 for eye_color and,4 for gender.)"
        input = gets.strip.downcase
       @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
@@ -27,25 +30,29 @@
       
    
 def show_results
-     puts " Here your search result:"
-     puts "........................."
-     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
-     puts "please make a selection by index number"
+#     puts " Here your search result:"
+#     puts "........................."
+#     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
+#     puts "please make a selection by index number"
      
-     input=gets.strip
-     @information = @objects [input.to_i - 1]
-    if (@information)
-       puts"#{@information.height}"
-       puts "here is the height"
-       show_results
-    elsif @information = @objects [input.to_i - 2]
-     puts "here is the eye_color"
-    puts"#{@information.eye_color}"
-       show_results
-     elsif @information = @objects [input.to_i - 3]
-     puts "here is the gender"
-     puts"#{@information.gender}"
-       show_results 
+#     input=gets.strip
+#     @information = @objects [input.to_i - 1]
+#     if (@information)
+#       puts"#{@information.height}"
+#       puts "here is the height"
+#       show_results
+#     elsif @information = @objects [input.to_i - 2]
+#     puts "here is the eye_color"
+#     puts"#{@information.eye_color}"
+#       show_results
+#     elsif @information = @objects [input.to_i - 3]
+#     puts "here is the gender"
+#     puts"#{@information.gender}"
+#   end
+# end
+# end
+
+    
     elsif input != "height" || input!="eye_color" || input !="gender" || input == nil
          puts"write a correct search criteria"
      elsif input == quit
