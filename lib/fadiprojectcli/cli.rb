@@ -26,30 +26,55 @@
    #or type search to go back
       
    
-  def show_results
+def show_results
      puts " Here your search result:"
      puts "........................."
      @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
+     puts "please make a selection by index number"
      
-     puts "please make a slection by index number"
      input=gets.strip
-     @information = @objects [input.to_i - 2]
-     if (@information)
-       puts"#{@information.eye_color}"
-       elsif(input=="quit")
-       quit
-     else
-       puts "write a correct search criteria"
+     @information = @objects [input.to_i - 1]
+    if (@information)
+       puts"#{@information.height}"
+       puts "here is the height"
        show_results
+    elsif @information = @objects [input.to_i - 2]
+     puts "here is the eye_color"
+    puts"#{@information.eye_color}"
+       show_results
+     elsif @information = @objects [input.to_i - 3]
+     puts "here is the gender"
+     puts"#{@information.gender}"
+       show_results 
+    elsif input != "height" || input!="eye_color" || input !="gender" || input == nil
+         puts"write a correct search criteria"
+     elsif input == quit
+     quit
+    end
+  end
+       
+       
+    def quit 
+      puts "thank you for visiting our website, goodbye!" 
+     end
    end
- end
+     
+       
+       
+       
+       
+       
+         puts
+#       elsif(input=="quit")
+#       quit
+#     else
+#       puts "write a correct search criteria"
+#       show_results
+#   end
+# end
  
    
-   def quit 
-     puts "thank you for visiting our website, goodbye!" 
-   end
- end
-     
+  
      
      
   #   #puts #{obj.name} - {obj.adresse}
