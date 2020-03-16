@@ -8,7 +8,8 @@
     
     def start
       puts "Welcome to star wars fan search"
-      puts "this website will help you found start wars  charactere information, you can start your seach by  People number, and you will get the charactere, name,height,eye_color and gender."
+      puts "this website will help you found start wars  charactere information, you can start your seach by  People by number between 1 to 87, and you will get the charactere, name them input an index number 2 for height,3 for eye_color and  4 for gender."
+      puts".................................................."
       puts "please wait a moment while we search your result"
       puts "................................................"
        input = gets.strip.downcase
@@ -32,13 +33,16 @@
      
      puts "please make a slection by index number"
      input=gets.strip
-     @information = @objects [input -1]
+     @information = @objects [input.to_i - 2]
      if (@information)
        puts"#{@information.eye_color}"
        elsif(input=="quit")
        quit
      else
+       puts "write a correct search criteria"
+       show_results
    end
+ end
  
    
    def quit 
