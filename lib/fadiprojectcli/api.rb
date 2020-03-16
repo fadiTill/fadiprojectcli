@@ -11,9 +11,9 @@ class Fadiprojectcli::API
     characteres_obj = {
       name: @charactere_hash["name"],
       height: @charactere_hash["height"],
+      skin_color: @charactere_hash["skin_color"],
       eye_color: @charactere_hash["eye_color"],
-      gender: @charactere_hash["gender"],
-      skin_color: @charactere_hash["skin_color"]
+      gender: @charactere_hash["gender"]
        }
 #     Fadiprojectcli::Information.new(characteres_obj)
  end  
