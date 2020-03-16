@@ -8,7 +8,7 @@
     
     def start
       puts "Welcome to star wars fan search"
-      puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
+      puts "this website will help you found start wars  charactere information, you can start your seach by  People name, and you will get the charactere height,eye_color and gender."
       puts "please wait a moment while we search your result"
       puts"................................................"
        input = gets.strip.downcase
