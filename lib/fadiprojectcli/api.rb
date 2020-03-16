@@ -13,8 +13,8 @@ class Fadiprojectcli::API
 
   
   def self.get_stuff(input)
-    @charactere_hash = HTTParty.get("http://swapi.co/api/people/?search=#{input}/")
-    @infos_obj = {
+    @charactere_hash = HTTParty.get("http://swapi.co/api/people/#{input}/")
+    infos_obj = {
          name: @charactere_hash["name"],
         height: @charactere_hash["height"],
         eye_color: @charactere_hash["eye_color"],
@@ -22,6 +22,6 @@ class Fadiprojectcli::API
       #binding.pry
   
       
-    Fadiprojectcli::Information.new(@infos_obj)
+    Fadiprojectcli::Information.new(infos_obj)
  end  
 end

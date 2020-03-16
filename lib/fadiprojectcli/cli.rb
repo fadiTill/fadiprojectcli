@@ -14,7 +14,7 @@
        input = gets.strip.downcase
       @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
-  #     binding.pry
+     binding.pry
   #     #show_starinfos_results
     end 
  end
