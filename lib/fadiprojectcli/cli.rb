@@ -22,8 +22,10 @@
       
       
    
-  # def show_starinfos_results
-  #   puts "please enter your search: "
+  def show_starinfos_results
+     puts " Here your search result: 
+     puts" .........................
+   end
   #   #@object.each do |obj|
   #   #puts #{obj.name} - {obj.adresse}
   # end
