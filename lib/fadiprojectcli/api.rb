@@ -12,7 +12,7 @@ class Fadiprojectcli::API
 
 
   
-  def self.get_stuff
+  def self.get_stuff(input)
     @charactere_hash = HTTParty.get("http://swapi.co/api/people/#{input}/")
     @infos_obj = {
          name: @charactere_hash["name"],
