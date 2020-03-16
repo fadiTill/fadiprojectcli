@@ -11,7 +11,7 @@
       puts "this website will help you found start wars information, you can start your seach by Planets, People,and Species.."
       puts "please wait a moment while we search your result"
       puts"................................................"
-  #     input = gets
+       input = gets
       @data = Fadiprojectcli::API.get_stuff
   #     @objects = Fadiprojectcli::Information.all
   #     binding.pry

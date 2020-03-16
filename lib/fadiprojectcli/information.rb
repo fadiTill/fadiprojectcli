@@ -13,21 +13,21 @@
    
    
   
-   #attr_accessor :people1, :people2, :people3, 
+   #attr_accessor :name, :height, :eye_color, :gender
    
    @@all=[ ]
   
   def initialize(infos)
-    # infos.each  {|key, value| self.send(("#{key}="), value)}
-    # save
+    infos.each  {|key, value| self.send(("#{key}="), value)}
+    save
   end 
   
   
   def self.all
-    # @@all
+     @@all
   end 
 
 def save 
-  # @@all << self
+   @@all << self
 end 
 end
