@@ -28,7 +28,7 @@
   def show_starinfos_results
      puts " Here your search result:"
      puts "........................."
-     @object.each.with_index(1)  {|people,index| puts "#{index}.#{people.name}"}
+     @objects.each.with_index(1)  {|people,index| puts "#{index}.#{people.name}"}
    end
  
    
