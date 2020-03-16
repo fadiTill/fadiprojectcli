@@ -29,6 +29,15 @@
      puts " Here your search result:"
      puts "........................."
      @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
+     
+     puts "please make a slection by index number"
+     input=gets.strip
+     @information = @objects [input -1]
+     if (@information)
+       puts"#{@information.eye_color}"
+       elsif(input=="quit")
+       quit
+     else
    end
  
    
