@@ -14,8 +14,13 @@ class Fadiprojectcli::API
   
   def self.get_stuff(input)
     @charactere_hash = HTTParty.get("http://swapi.co/api/people/#{input}/")
-    infos_obj = {
-         name: @charactere_hash["name"],
+      
+   if (@charactere_hash["Error"])
+     puts"write a correct search criteria"
+        
+   else
+      infos_obj = {
+        name: @charactere_hash["name"],
         height: @charactere_hash["height"],
         eye_color: @charactere_hash["eye_color"],
         gender: @charactere_hash["gender"] }
@@ -23,5 +28,6 @@ class Fadiprojectcli::API
   
       
     Fadiprojectcli::Information.new(infos_obj)
- end  
+  end
+   end  
 end
