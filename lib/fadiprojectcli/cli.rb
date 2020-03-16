@@ -30,31 +30,27 @@
       
    
 def show_results
-#     puts " Here your search result:"
-#     puts "........................."
-#     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
-#     puts "please make a selection by index number"
+    puts " Here your search result:"
+    puts "........................."
+    @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
+    puts "please make a selection by index number"
      
-#     input=gets.strip
-#     @information = @objects [input.to_i - 1]
-#     if (@information)
-#       puts"#{@information.height}"
-#       puts "here is the height"
-#       show_results
-#     elsif @information = @objects [input.to_i - 2]
-#     puts "here is the eye_color"
-#     puts"#{@information.eye_color}"
-#       show_results
-#     elsif @information = @objects [input.to_i - 3]
-#     puts "here is the gender"
-#     puts"#{@information.gender}"
-#   end
-# end
-# end
-
-    
-    elsif input != "height" || input!="eye_color" || input !="gender" || input == nil
-         puts"write a correct search criteria"
+    input=gets.strip
+    @information = @objects [input.to_i - 1]
+    if (@information)
+      puts"#{@information.height}"
+       puts "here is the height"
+      show_results
+    elsif @information = @objects [input.to_i - 2]
+    puts "here is the eye_color"
+    puts"#{@information.eye_color}"
+      show_results
+    elsif @information = @objects [input.to_i - 3]
+    puts"#{@information.gender}"
+    puts "here is the gender"
+      show_results
+    elsif input != "#{@information.height}" || input!= "#{@information.eye_color}" || input !="#{@information.gender}" || input == nil
+       puts"Please, write a correct search criteria"
      elsif input == quit
      quit
     end
@@ -63,7 +59,7 @@ def show_results
        
     def quit 
       puts "thank you for visiting our website, goodbye!" 
-     end
+    end
    end
      
        
