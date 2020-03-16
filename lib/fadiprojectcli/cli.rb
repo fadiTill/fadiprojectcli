@@ -10,7 +10,7 @@
       puts "Welcome to star wars fan search!"
       puts ".................................................................................................................."
       puts "this website will help you found start wars  charactere information.
-      puts "You can make your seach of characteres by choosing a number between 1 to 87
+      puts "You can make your seach of characteres by choosing a  random number between 1 to 87"
       puts"....................................................................................................................'"
       puts "please wait a moment while we search your result"
       puts "...................................................................................................................."
