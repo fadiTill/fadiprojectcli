@@ -19,14 +19,16 @@
     end 
  end
       
-      
+   #1.luke skywalker
+   #2.r2
+   #2 subset data star
+   #or type search to go back
       
    
   def show_starinfos_results
      puts " Here your search result: 
      puts" .........................
-   end
-  #   #@object.each do |obj|
+     @object.each.with_index(1) do {|people,index| puts "#{index}.#{people.name}}"
   #   #puts #{obj.name} - {obj.adresse}
   # end
   #   input = gets.strip.downcase
