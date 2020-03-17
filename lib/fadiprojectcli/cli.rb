@@ -33,14 +33,16 @@ def show_results
     puts " Here your search result:"
     puts "........................."
     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
+    
     puts "please make a selection by index number"
-     
-    input=gets.strip
-    @information = @objects [input.to_i - 1]
-    if (@information)
+    input = gets.strip
+    
+    
+    if (input.to_i > 0)
+      @information = @objects [input.to_i - 1]
       puts "here is the height"
-      show_results
       puts"#{@information.height}"
+      show_results
     elsif @information = @objects [input.to_i - 2]
        puts "here is the eye_color"
        show_results
@@ -67,7 +69,7 @@ def show_results
        
        
        
-         puts
+        # puts
 #       elsif(input=="quit")
 #       quit
 #     else
