@@ -35,15 +35,15 @@ def show_results
     if (@information)
       puts "#{@information.height}"
       puts "here is the height "
-      show_results
+      quit
      elsif @information = @objects[input.to_i - 3]
       puts "here is the eye_color"
       puts "#{@information.eye_color}"
-      show_results
+      quit
     elsif @information = @objects[input.to_i - 4]
       puts "here is the gender"
       puts "#{@information.gender}"
-      start
+      quit
      elsif (input == "quit")
     quit
     end
@@ -53,6 +53,8 @@ def show_results
        
     def quit 
       puts "thank you for visiting our website, goodbye!" 
+      puts "..................................................."
+  
      end
    end
  
