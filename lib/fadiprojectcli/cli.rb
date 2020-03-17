@@ -28,23 +28,23 @@ def show_results
     
   
 
-       while input > 0 & input < 4
+      while input > 0 
        puts "please make a selection by index number"
       input = gets.strip
-      @information = @objects [input.to_i - 2]
+      @information = @objects[input.to_i - 2]
     if (@information)
-      puts"#{@information.height}"
+      puts "#{@information.height}"
       puts "here is the height "
       show_results
-     elsif @information = @objects [input.to_i - 3]
+     elsif @information = @objects[input.to_i - 3]
       puts "here is the eye_color"
       puts "#{@information.eye_color}"
       show_results
-    elsif @information = @objects [input.to_i - 4]
+    elsif @information = @objects[input.to_i - 4]
       puts "here is the gender"
-      puts"#{@information.gender}"
+      puts "#{@information.gender}"
       start
-     elsif input == quit
+     elsif (input == "quit")
     quit
     end
    end
@@ -57,6 +57,7 @@ def show_results
       puts "thank you for visiting our website, goodbye!" 
      end
    end
+ end
      
        
        
