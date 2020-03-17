@@ -7,7 +7,7 @@
     def start
       puts "Welcome to the star wars fan search!"
       puts ".................................................................................................................."
-      puts "This website will help you find Star Wars charactere information."
+      puts "This Cli will help you find Star Wars charactere information."
       puts " first You can make your seach of characters by choosing a random number between 1 to 87"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
        input = gets.strip.downcase

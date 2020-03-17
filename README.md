@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fadiprojectcli`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+      "This Cli will help you find Star Wars charactere information."
+      1) first You can make your seach of characters by choosing a random number between 1 to 87"
+      2) then please make an index selection ( index number 2. for height, 3. for eye_color 4. for gender).
 
 ## Development
 
