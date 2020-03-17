@@ -5,7 +5,7 @@
   
 
     def start
-      puts "Welcome to star wars fan search!"
+      puts "Welcome to  the star wars fan search!"
       puts ".................................................................................................................."
       puts "this website will help you found start wars characteres information."
       puts " first You can make your seach of characteres by choosing a random number between 1 to 87"
