@@ -18,7 +18,7 @@ class Fadiprojectcli::API
       # if (@charactere_hash["Error"])
       # puts"Please write a correct search criteria"
         
-      else
+     # else
         infos_obj = {
         name: @charactere_hash["name"],
         height: @charactere_hash["height"],
@@ -30,4 +30,4 @@ class Fadiprojectcli::API
       Fadiprojectcli::Information.new(infos_obj)
      end
     end  
-  end
+  

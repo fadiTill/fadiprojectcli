@@ -3,9 +3,7 @@
   require 'pry'
   class Fadiprojectcli::CLI
   
-  
-     
-    
+
     def start
       puts "Welcome to star wars fan search!"
       puts ".................................................................................................................."
@@ -29,42 +27,37 @@ def show_results
     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
     
   
+
     
-      puts "please make a selection by index number"
+       puts "please make a selection by index number"
       input = gets.strip
-      @information = @objects [input.to_i - 1]
+      @information = @objects [input.to_i - 2]
     if (@information)
       puts"#{@information.height}"
       puts "here is the height "
-    elsif (input == "quit")
-       quit
       show_results
+     elsif @information = @objects [input.to_i - 3]
+      puts "here is the eye_color"
+      puts "#{@information.eye_color}"
+      show_results
+    elsif @information = @objects [input.to_i - 4]
+      puts "here is the gender"
+      puts"#{@information.gender}"
+      show_results
+     elsif input != "#{@information.height}" || input!= "#{@information.eye_color}" || input !="#{@information.gender}" || input == nil
+     puts"Please, write a correct search criteria"
+   elsif input == quit
+    quit
+    end
+   end
       
-  end
-end
       
-      
-  #   elsif @information = @objects [input.to_i - 3]
-  #     puts "here is the eye_color"
-  #     show_results
-  #     puts "#{@information.eye_color}"
-  #   elsif @information = @objects [input.to_i - 4]
-  #     puts "here is the gender"
-  #     puts"#{@information.gender}"
-  #     show_results
-      
-  #   elsif input != "#{@information.height}" || input!= "#{@information.eye_color}" || input !="#{@information.gender}" || input == nil
-  #     puts"Please, write a correct search criteria"
-  #   elsif input == quit
-  #   quit
-  #   end
-  # end
        
        
-  #   def quit 
-  #     puts "thank you for visiting our website, goodbye!" 
-  #   end
-  # end
+    def quit 
+      puts "thank you for visiting our website, goodbye!" 
+     end
+   end
      
        
        
