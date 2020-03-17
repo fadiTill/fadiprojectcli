@@ -9,9 +9,9 @@
       puts ".................................................................................................................."
       puts "this website will help you found start wars characteres information."
       puts " first You can make your seach of characteres by choosing a random number between 1 to 87"
-      puts " then please make an index selection ( index number 2 for height, 3 for eye_color and,4 for gender.)"
+      puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
        input = gets.strip.downcase
-      puts "....................................................................................................................'"
+      puts "..................................................................................................................."
       puts "please wait a moment while we search your result"
       puts "...................................................................................................................."
       
@@ -43,7 +43,7 @@ def show_results
     elsif @information = @objects [input.to_i - 4]
       puts "here is the gender"
       puts"#{@information.gender}"
-      show_results
+      start
      elsif input == quit
     quit
     end
