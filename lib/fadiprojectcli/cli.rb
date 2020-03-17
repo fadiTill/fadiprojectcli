@@ -23,7 +23,7 @@
    
 def show_results
     puts " Here  are your search result:"
-    puts "........................."
+    puts "................................................................................."
     @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
     
   
@@ -54,7 +54,7 @@ def show_results
     def quit 
       puts "thank you for visiting our website, goodbye!" 
       puts "..................................................."
-  
+      puts"....................................................."
      end
    end
  
