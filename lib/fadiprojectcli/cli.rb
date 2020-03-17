@@ -28,7 +28,7 @@ def show_results
     
   
 
-    
+       while input > 0 & input < 4
        puts "please make a selection by index number"
       input = gets.strip
       @information = @objects [input.to_i - 2]
@@ -44,14 +44,13 @@ def show_results
       puts "here is the gender"
       puts"#{@information.gender}"
       show_results
-     elsif input != "#{@information.height}" || input!= "#{@information.eye_color}" || input !="#{@information.gender}" || input == nil
-     puts"Please, write a correct search criteria"
-   elsif input == quit
+     elsif input == quit
     quit
     end
    end
       
-      
+    #   elsif input != "#{@information.height}" || input!= "#{@information.eye_color}" || input !="#{@information.gender}" || input == nil
+    # # puts"Please, write a correct search criteria"
        
        
     def quit 
