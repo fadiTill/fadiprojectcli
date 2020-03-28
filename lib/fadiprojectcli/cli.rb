@@ -11,6 +11,9 @@
       puts " first You can make your seach of characters by choosing a random number between 1 to 87"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
        input = gets.strip.downcase
+       if input == "quit"
+         quit
+       else input != "quit"
       puts "..................................................................................................................."
       puts "please wait a moment while we search for your result"
       puts "...................................................................................................................."
@@ -19,6 +22,7 @@
       @objects = Fadiprojectcli::Information.all
       show_results
     end 
+  end
  
    
 def show_results
@@ -35,16 +39,17 @@ def show_results
     if (@information)
       puts "#{@information.height}"
       puts "here is the height "
-      quit
+      show_results
      elsif @information = @objects[input.to_i - 3]
       puts "here is the eye_color"
       puts "#{@information.eye_color}"
-      quit
+      show_results
     elsif @information = @objects[input.to_i - 4]
       puts "here is the gender"
       puts "#{@information.gender}"
-      quit
+      show results
      elsif (input == "quit")
+     #binding.pry
     quit
     end
    end
