@@ -11,7 +11,7 @@
       puts " first You can make your seach of characters by choosing a random number between 1 to 87"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
       puts "to leave the search type quit, or make a new search"
-       input = gets.strip.to_i
+       input = gets.strip.downcase
        if input == "quit"
          quit
        else input != "quit"
@@ -26,18 +26,18 @@
       
       @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
-      if input > 10 || @objects.empty?
-        puts "N/A"
+      # if input > 10 || @objects.empty?
+      #   puts "N/A"
       show_results
     end 
   end
-end
+# end
  
    
 def show_results
     puts " Here  are your search result:"
     puts "................................................................................."
-    @objects.each.with_index(1)  {|information,index| puts "#{index}. #{information.name}"}
+    @objects.each.with_index(1)  {|information,index| puts"#{index}. #{information.name}"}
     
   
 
@@ -66,9 +66,7 @@ def show_results
       puts "please make a new search"
       puts "........................................................................................................"
       start
-     elsif (input == "quit")
-     #binding.pry
-    quit
+     
     end
    end
       
