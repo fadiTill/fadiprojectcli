@@ -15,7 +15,7 @@ class Fadiprojectcli::API
   def self.get_stuff(input)
       @charactere_hash = HTTParty.get("http://swapi.co/api/people/#{input}/")
       
-       if (@charactere_hash["Error"])
+       if (@charactere_hash["Error"]) || false
        puts"Please write a correct search criteria"
        start
         

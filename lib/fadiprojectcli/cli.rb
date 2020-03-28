@@ -18,7 +18,10 @@
       puts "please wait a moment while we search for your result"
       puts "...................................................................................................................."
       
-      @data = Fadiprojectcli::API.get_stuff(input)
+      [1,2,3,4,5,6,7,8,9,10].each do |number|
+        @data = Fadiprojectcli::API.get_stuff(number)
+       end 
+     # @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
       show_results
     end 
