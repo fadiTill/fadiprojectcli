@@ -10,7 +10,8 @@
       puts "This Cli will help you find Star Wars charactere information."
       puts " first You can make your seach of characters by choosing a random number between 1 to 87"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
-       input = gets.strip.downcase
+      puts "to leave the search type quit, or make a new search"
+       input = gets.strip.to_i
        if input == "quit"
          quit
        else input != "quit"
@@ -18,14 +19,19 @@
       puts "please wait a moment while we search for your result"
       puts "...................................................................................................................."
       
-      [1,2,3,4,5,6,7,8,9,10].each do |number|
-        @data = Fadiprojectcli::API.get_stuff(number)
-       end 
-     # @data = Fadiprojectcli::API.get_stuff(input)
+    #   [1,2,3,4,5,6,7,8,9,10].each do |number|
+    #     @data = Fadiprojectcli::API.get_stuff(number)
+    #   end 
+    # end
+      
+      @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
+      if input > 10 || @objects.empty?
+        puts "N/A"
       show_results
     end 
   end
+end
  
    
 def show_results
@@ -38,7 +44,8 @@ def show_results
        
        puts "please make a selection by index number"
       input = gets.strip
-     if @information = @objects[input.to_i - 2]
+      if @information
+      @information = @objects[input.to_i - 2]
       puts "#{@information.height}"
       puts "here is the height"
       quit
