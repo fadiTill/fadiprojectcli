@@ -8,15 +8,17 @@
       puts "Welcome to the star wars fan search!"
       puts ".................................................................................................................."
       puts "This Cli will help you find Star Wars charactere information."
-      puts " first You can make your seach of characters by choosing a random number between 1 to 87"
+      puts " first You can make your seach of characters by choosing a random number between 1 to 10"
+      puts "1.Luke Skywalker, 2.C-3PO,3.R2-D2, 4.Darth Vader, 5.Leia Organa, 6.Owen Lars,7.Beru Whitesun lars,8. R5-D4,
+      9.Biggs Darklighter, 10. Obi-Wan Kenobi"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
-      puts "to leave the search type 88, or make a new search"
+      puts "to leave the search type 11, or make a new search"
        input = gets.to_i
-       if input == 88
+       if input == 11
          quit
-        elsif input < 0  || input > 88 
+        elsif input < 0  || input > 11 
       puts "N/A please make a new seach"
-       else input != 88
+       else input != 11
       puts "..................................................................................................................."
       puts "please wait a moment while we search for your result"
       puts "...................................................................................................................."
