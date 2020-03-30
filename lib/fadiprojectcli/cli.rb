@@ -50,7 +50,7 @@ def show_results
       @information = @objects[input.to_i - 2]
       puts "#{@information.height}"
       puts "here is the height"
-      quit
+      show_results
       # puts "please make a new search"
       # puts "......................................................................................................."
       # start
@@ -58,7 +58,7 @@ def show_results
      @information = @objects[input.to_i - 3]
       puts "here is the eye_color"
       puts "#{@information.eye_color}"
-      quit
+      show_results
       # puts "please make a new search"
       # puts "......................................................................................................."
       # start
@@ -66,7 +66,7 @@ def show_results
       @information = @objects[input.to_i - 4]
       puts "here is the gender"
       puts "#{@information.gender}"
-      quit
+      show_results
       # puts "please make a new search"
       # puts "........................................................................................................"
       else input != 2 || input !=3 || input !=4 
