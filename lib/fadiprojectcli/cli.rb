@@ -14,7 +14,7 @@
        input = gets.to_i
        if input == "quit"
          quit
-        elsif input < 0  || input > 87 
+        elsif input < 0  || input > 87 || input != Integer
       puts "N/A please make a new seach"
        else input != "quit"
       puts "..................................................................................................................."
