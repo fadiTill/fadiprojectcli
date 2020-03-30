@@ -14,7 +14,7 @@
        input = gets.to_i
        if input == 88
          quit
-        elsif input < 0  || input > 88 || input != Integer
+        elsif input < 0  || input > 88 
       puts "N/A please make a new seach"
        else input != 88
       puts "..................................................................................................................."
@@ -70,7 +70,7 @@ def show_results
       # puts "please make a new search"
       # puts "........................................................................................................"
       else input != 2 || input !=3 || input !=4 
-      puts "N/A please make a new seach"
+      puts "N/A please make a new index seach"
       quit
      
     end
