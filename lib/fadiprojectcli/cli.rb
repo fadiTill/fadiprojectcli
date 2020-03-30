@@ -11,9 +11,11 @@
       puts " first You can make your seach of characters by choosing a random number between 1 to 87"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
       puts "to leave the search type quit, or make a new search"
-       input = gets.strip.downcase
+       input = gets.to_i
        if input == "quit"
          quit
+        elsif input < 0  || input > 87 
+      puts "N/A please make a new seach"
        else input != "quit"
       puts "..................................................................................................................."
       puts "please wait a moment while we search for your result"
@@ -49,25 +51,27 @@ def show_results
       puts "#{@information.height}"
       puts "here is the height"
       quit
-      puts "please make a new search"
-      puts "......................................................................................................."
-      start
+      # puts "please make a new search"
+      # puts "......................................................................................................."
+      # start
      elsif input == 3
      @information = @objects[input.to_i - 3]
       puts "here is the eye_color"
       puts "#{@information.eye_color}"
       quit
-      puts "please make a new search"
-      puts "......................................................................................................."
-      start
-    else input == 4
+      # puts "please make a new search"
+      # puts "......................................................................................................."
+      # start
+    elsif input == 4
       @information = @objects[input.to_i - 4]
       puts "here is the gender"
       puts "#{@information.gender}"
       quit
-      puts "please make a new search"
-      puts "........................................................................................................"
-      start
+      # puts "please make a new search"
+      # puts "........................................................................................................"
+      else input != 2 || input !=3 || input !=4 
+      puts "N/A please make a new seach"
+      quit
      
     end
    end
