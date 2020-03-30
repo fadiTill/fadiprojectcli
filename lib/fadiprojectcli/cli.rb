@@ -10,13 +10,13 @@
       puts "This Cli will help you find Star Wars charactere information."
       puts " first You can make your seach of characters by choosing a random number between 1 to 87"
       puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
-      puts "to leave the search type quit, or make a new search"
+      puts "to leave the search type 88, or make a new search"
        input = gets.to_i
-       if input == "quit"
+       if input == 88
          quit
-        elsif input < 0  || input > 87 || input != Integer
+        elsif input < 0  || input > 88 || input != Integer
       puts "N/A please make a new seach"
-       else input != "quit"
+       else input != 88
       puts "..................................................................................................................."
       puts "please wait a moment while we search for your result"
       puts "...................................................................................................................."
