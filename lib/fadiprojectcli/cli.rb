@@ -43,8 +43,8 @@ def show_results
 
        
        puts "please make a selection by index number"
-      input = gets.strip
-      if @information
+      input = gets.to_i
+      if input == 2
       @information = @objects[input.to_i - 2]
       puts "#{@information.height}"
       puts "here is the height"
@@ -52,14 +52,16 @@ def show_results
       puts "please make a new search"
       puts "......................................................................................................."
       start
-     elsif @information = @objects[input.to_i - 3]
+     elsif input == 3
+     @information = @objects[input.to_i - 3]
       puts "here is the eye_color"
       puts "#{@information.eye_color}"
       quit
       puts "please make a new search"
       puts "......................................................................................................."
       start
-    elsif @information = @objects[input.to_i - 4]
+    else input == 4
+      @information = @objects[input.to_i - 4]
       puts "here is the gender"
       puts "#{@information.gender}"
       quit
