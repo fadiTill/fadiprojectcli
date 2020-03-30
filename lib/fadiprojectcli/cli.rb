@@ -9,9 +9,22 @@
       puts ".................................................................................................................."
       puts "This Cli will help you find Star Wars charactere information."
       puts " first You can make your seach of characters by choosing a random number between 1 to 10"
-      puts "1.Luke Skywalker, 2.C-3PO,3.R2-D2, 4.Darth Vader, 5.Leia Organa, 6.Owen Lars,7.Beru Whitesun lars,8. R5-D4,
-      9.Biggs Darklighter, 10. Obi-Wan Kenobi"
-      puts " then please make an index selection ( index number 2. for height, 3. for eye_color and, 4. for gender.)"
+      puts "
+      1.Luke Skywalker,
+      2.C-3PO,
+      3.R2-D2, 
+      4.Darth Vader, 
+      5.Leia Organa, 
+      6.Owen Lars,
+      7.Beru Whitesun lars,
+      8.R5-D4,
+      9.Biggs Darklighter,
+      10.Obi-Wan Kenobi."
+      puts"..............................................................................................................."
+      puts " then please make an index selection by index number
+      2. for height,
+      3. for eye_color and, 
+      4. for gender."
       puts "to leave the search type 11, or make a new search"
        input = gets.to_i
        if input == 11
@@ -30,8 +43,6 @@
       
       @data = Fadiprojectcli::API.get_stuff(input)
       @objects = Fadiprojectcli::Information.all
-      # if input > 10 || @objects.empty?
-      #   puts "N/A"
       show_results
     end 
   end
@@ -39,9 +50,9 @@
  
    
 def show_results
-    puts " Here  are your search result:"
+    puts "Here  are your search result:"
     puts "................................................................................."
-    @objects.each.with_index(1)  {|information,index| puts"#{index}. #{information.name}"}
+    @objects.each.with_index(1) {|information,index|puts"#{index}. #{information.name}"}
     
   
 
