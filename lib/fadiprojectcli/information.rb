@@ -27,7 +27,7 @@ class Fadiprojectcli::Information
      @@all
   end 
 
-def save 
+  def save 
    @@all << self
-end 
-end
+ end 
+ end
