@@ -30,7 +30,9 @@
     if input == 11
        quit
     elsif input < 0  || input > 11 || input = String
-       puts "N/A please make a new seach"
+       puts "N/A"
+       puts "FATAL ERROR, USE INDEX NUMBER ONLY!"
+       quit
     else input != 11
        puts "..................................................................................................................."
        puts "please wait a moment while we search for your result"
