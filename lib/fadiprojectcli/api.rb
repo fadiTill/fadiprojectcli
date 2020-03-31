@@ -15,11 +15,7 @@ class Fadiprojectcli::API
      def self.get_stuff(input)
          @charactere_hash = HTTParty.get("http://swapi.co/api/people/#{input}/")
       
-        if @charactere_hash.empty? 
-          puts"Please write a correct search criteria"
-          start
         
-        else
           infos_obj = {
           name: @charactere_hash["name"],
           height: @charactere_hash["height"],
@@ -31,5 +27,5 @@ class Fadiprojectcli::API
       Fadiprojectcli::Information.new(infos_obj)
      end
     end 
-  end
+  
   

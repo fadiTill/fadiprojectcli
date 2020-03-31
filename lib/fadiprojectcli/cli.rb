@@ -56,7 +56,9 @@
        
        puts "please make a selection by index number"
        input = gets.to_i
-    if input == 2
+        if input == 11
+          quit
+      elsif input == 2
        @information = @objects[input.to_i - 2]
        puts "#{@information.height}"
        puts "here is the height"
@@ -81,7 +83,7 @@
       # puts "........................................................................................................"
      else input != 2 || input !=3 || input !=4 
       puts "N/A please make a new index seach"
-      quit
+      show_results
      end
    end
       
