@@ -29,12 +29,12 @@
        input = gets.to_i
     if input == 11
        quit
-    elsif input < 0  || input > 11 
+    elsif input < 0  || input > 11 || input = String
        puts "N/A please make a new seach"
     else input != 11
        puts "..................................................................................................................."
-        puts "please wait a moment while we search for your result"
-        puts "...................................................................................................................."
+       puts "please wait a moment while we search for your result"
+       puts "...................................................................................................................."
       
   
       
@@ -47,7 +47,7 @@
  
    
    def show_results
-        puts "Here  are your search result:"
+        # puts "Here  are your search result:"
         puts "................................................................................."
         @objects.each.with_index(1) {|information,index|puts"#{index}. #{information.name}"}
     
@@ -56,19 +56,19 @@
        
        puts "please make a selection by index number"
        input = gets.to_i
-        if input == 11
-          quit
+      if input == 11
+        quit
       elsif input == 2
        @information = @objects[input.to_i - 2]
+       puts "here is the height:"
        puts "#{@information.height}"
-       puts "here is the height"
       show_results
       # puts "please make a new search"
       # puts "......................................................................................................."
       # start
      elsif input == 3
        @information = @objects[input.to_i - 3]
-       puts "here is the eye_color"
+       puts "here is the eye_color:"
        puts "#{@information.eye_color}"
       show_results
       # puts "please make a new search"
@@ -76,12 +76,12 @@
       # start
     elsif input == 4
        @information = @objects[input.to_i - 4]
-       puts "here is the gender"
+       puts "here is the gender:"
        puts "#{@information.gender}"
       show_results
       # puts "please make a new search"
       # puts "........................................................................................................"
-     else input != 2 || input !=3 || input !=4 
+     else input != 2 || input !=3 || input !=4 || input = String
       puts "N/A please make a new index seach"
       show_results
      end
