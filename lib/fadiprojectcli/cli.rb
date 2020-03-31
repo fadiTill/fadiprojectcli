@@ -29,10 +29,9 @@
        input = gets.to_i
     if input == 11
        quit
-    elsif input < 0  || input > 11 || input = String
+    elsif input < 0  || input > 11 
        puts "N/A"
        puts "FATAL ERROR, USE INDEX NUMBER ONLY!"
-       quit
     else input != 11
        puts "..................................................................................................................."
        puts "please wait a moment while we search for your result"
@@ -83,7 +82,7 @@
       show_results
       # puts "please make a new search"
       # puts "........................................................................................................"
-     else input != 2 || input !=3 || input !=4 || input = String
+     else input != 2 || input != 3 || input != 4 
       puts "N/A please make a new index seach"
       show_results
      end
