@@ -26,12 +26,14 @@
        3. for eye_color and, 
        4. for gender."
        puts "to leave the search type 11, or make a new search"
-       input = gets.to_i
+       input = gets.chomp.to_i
     if input == 11
        quit
-    elsif input < 0  || input > 11 
+     elsif !input.between?(1,10)
+    # elsif input < 0  || input > 11 
        puts "N/A"
        puts "FATAL ERROR, USE INDEX NUMBER ONLY!"
+       start
     else input != 11
        puts "..................................................................................................................."
        puts "please wait a moment while we search for your result"
