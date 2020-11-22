@@ -1,5 +1,8 @@
 # Fadiprojectcli
 
+
+DEMO VIDEO : https://youtu.be/SSyAB93FCoM
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fadiprojectcli`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 
